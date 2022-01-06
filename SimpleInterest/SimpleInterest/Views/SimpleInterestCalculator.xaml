@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SimpleInterest.Views.SimpleInterestCalculator">
+
+    <ContentPage.Content>
+
+        <StackLayout>
+
+            <Label Text="Simple Interest Calculator"
+                   FontSize="Title"
+                   BackgroundColor="LightBlue"
+                   VerticalOptions="Fill" 
+                   HorizontalOptions="CenterAndExpand"/>
+
+
+            <Label Text="" />
+
+            <Label Text="Principle Amount(₹)"
+                   VerticalOptions="Center"
+                   HorizontalOptions="CenterAndExpand"
+                   FontSize="Subtitle" />
+            <Entry x:Name="TextBox_PrincipleAmount" />
+
+            
+            <Label Text="" />
+
+            <Label Text="Number of Years"
+                   VerticalOptions="Center"
+                   HorizontalOptions="CenterAndExpand"
+                   FontSize="Subtitle"/>
+            <Entry x:Name="TextBox_NumberofYears" />
+            
+            
+            <Label Text="" />
+
+            <Label Text="Rate of Interest(%)"
+                   VerticalOptions="Center"
+                   HorizontalOptions="CenterAndExpand"
+                   FontSize="Subtitle" />
+            <Entry x:Name="TextBox_RateofInterest" />
+
+            <Label Text="" />
+
+            <Label Text="Interest Amount(₹) "
+                   VerticalOptions="Center"
+                   HorizontalOptions="CenterAndExpand"
+                   FontSize="Subtitle" />
+            <Entry x:Name="TextBox_InterestAmount" BackgroundColor="Silver" />
+
+            
+            <Label Text="" />
+
+            <Label Text="Total Amount(₹) "
+                   VerticalOptions="Center"
+                   HorizontalOptions="CenterAndExpand"
+                   FontSize="Subtitle"/>
+            <Entry x:Name="TextBox_TotalAmount" BackgroundColor="Silver" />
+
+            
+            <Label Text="" />
+
+            <Button Text="  CALCULATE"
+                BackgroundColor="Green"
+                    CornerRadius="20"
+                  Margin="100,0,100,10"
+                     x:Name="btnCalculate"
+                    Clicked="btnCalculate_Clicked">
+            </Button>
+            
+
+            <Button Text="  CANCEL" 
+                BackgroundColor="Red"
+                    CornerRadius="20"
+                    Margin="100,0,100,10"
+                    x:Name="btnCancel"
+                    Clicked="btnCancel_Clicked">
+            </Button>
+
+            <Label x:Name="Cancel"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
